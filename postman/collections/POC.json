@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "bf4c2145-172b-46ba-8b69-9008473910af",
+		"name": "POC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "25808301-bf4c2145-172b-46ba-8b69-9008473910af"
+	},
+	"item": [
+		{
+			"name": "Goglis!",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "5f10b5f3-9246-4dfd-bcb5-213a7ca3c1a0",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"<title>Google</title>\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "f3ecb933-b2c6-4bba-9da7-6695f5ac9387",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.google.com/",
+					"protocol": "https",
+					"host": [
+						"www",
+						"google",
+						"com"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Amco me",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "40a459a0-c3d3-4a4d-bb23-314434eb21d6",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"<title>Amco - Home</title>\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "91c7b769-a0e1-40f8-a2d2-815191ebf888",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.amco.me/",
+					"protocol": "https",
+					"host": [
+						"www",
+						"amco",
+						"me"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book payment",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c3d752a4-87e1-44ae-80e9-4f5bb3de3141",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"<title>Compra de Libros\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "b632414e-2633-4c5d-8eb4-3a3c90172eab",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.amcoonline.net/es-cr/parents/payments/new",
+					"protocol": "https",
+					"host": [
+						"www",
+						"amcoonline",
+						"net"
+					],
+					"path": [
+						"es-cr",
+						"parents",
+						"payments",
+						"new"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
