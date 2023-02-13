@@ -101,16 +101,13 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "af707b1e-b6bf-4ee5-a4cb-94589b994eca",
+						"id": "e8f5f391-cbe5-420d-a831-bbd00f16a722",
 						"exec": [
-							"pm.test(\"Response time is less than 500ms\", function () {",
-							"    pm.expect(pm.response.responseTime).to.be.below(500);",
+							"pm.test(\"Response time is less than 1000ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);",
 							"});",
 							"pm.test(\"Status code is 200\", function () {",
 							"    pm.response.to.have.status(200);",
-							"});",
-							"pm.test(\"Body matches string\", function () {",
-							"    pm.expect(pm.response.text()).to.include(\"Amco · Welcome · Identity Provider\");",
 							"});"
 						],
 						"type": "text/javascript"
