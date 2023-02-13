@@ -19,10 +19,13 @@
 							"pm.test(\"Body matches string\", function () {",
 							"    pm.expect(pm.response.text()).to.include(\"<title>Google</title>\");",
 							"});",
-							"",
 							"pm.test(\"Response time is less than 200ms\", function () {",
 							"    pm.expect(pm.response.responseTime).to.be.below(200);",
-							"});"
+							"});",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"<head>\");",
+							"});",
+							""
 						],
 						"type": "text/javascript"
 					}
