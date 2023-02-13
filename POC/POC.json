@@ -76,7 +76,7 @@
 							"pm.test(\"Status code is 200\", function () {",
 							"    pm.response.to.have.status(200);",
 							"});",
-							"pm.test(\"Body matches string\", function () {",
+							"pm.test(\"Body matches <title>Compra de Libros\", function () {",
 							"    pm.expect(pm.response.text()).to.include(\"<title>Compra de Libros\");",
 							"});"
 						],
