@@ -106,7 +106,7 @@
 							"pm.test(\"Status code is 200\", function () {",
 							"    pm.response.to.have.status(200);",
 							"});",
-							"pm.test(\"Body matches string\", function () {",
+							"pm.test(\"Body matches Amco · Welcome · Identity Provider\", function () {",
 							"    pm.expect(pm.response.text()).to.include(\"Amco · Welcome · Identity Provider\");",
 							"});"
 						],
