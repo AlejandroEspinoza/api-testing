@@ -21,17 +21,13 @@
 							"});",
 							"pm.test(\"Response time is less than 200ms\", function () {",
 							"    pm.expect(pm.response.responseTime).to.be.below(200);",
-							"});",
-							"pm.test(\"Body matches string\", function () {",
-							"    pm.expect(pm.response.text()).to.include(\"<head>\");",
-							"});",
-							""
+							"});"
 						],
 						"type": "text/javascript"
 					}
 				}
 			],
-			"_postman_id": "2cdef66b-294f-4493-892b-05f98237482b",
+			"id": "2cdef66b-294f-4493-892b-05f98237482b",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -65,7 +61,7 @@
 					}
 				}
 			],
-			"_postman_id": "45ec507c-3a03-458b-b043-856f2ea02711",
+			"id": "45ec507c-3a03-458b-b043-856f2ea02711",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -99,7 +95,7 @@
 					}
 				}
 			],
-			"_postman_id": "902ac483-a3f9-4e32-a7d9-37b805d6deef",
+			"id": "902ac483-a3f9-4e32-a7d9-37b805d6deef",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -132,7 +128,7 @@
 					}
 				}
 			],
-			"_postman_id": "92ec4d96-d986-49d8-9b48-ffc13bccbf9c",
+			"id": "92ec4d96-d986-49d8-9b48-ffc13bccbf9c",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
