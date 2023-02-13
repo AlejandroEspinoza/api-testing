@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "9af8ed42-227a-46ea-b8cc-374f5902766f",
+		"name": "POC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Goglis!",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "02c72141-ed1e-417a-936b-8941162f4b69",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"<title>Google</title>\");",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "8d6052cf-950b-4905-80ee-852bd419f158",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://www.google.com/"
+			},
+			"response": []
+		},
+		{
+			"name": "Amco me",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "79da3e87-2e9b-4c7d-963d-5589b47e307e",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"<title>Amco - Home</title>\");",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 2000ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(2000);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "26aff670-e443-4abe-af2a-1045bcd76c92",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://www.amco.me/"
+			},
+			"response": []
+		},
+		{
+			"name": "Book payment",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "359d4eca-c79a-4232-9e91-4c3f98ace8ac",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"<title>Compra de Libros\");",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 2000ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(2000);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "51a4cc00-746f-49b3-915a-494b4e6c716f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://www.amcoonline.net/es-cr/parents/payments/new"
+			},
+			"response": []
+		},
+		{
+			"name": "IDP",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "5c8fd380-7f1e-471a-92b4-2fed7317ce1f",
+						"exec": [
+							"pm.test(\"Response time is less than 500ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);",
+							"});",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"Amco · Welcome · Identity Provider\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "8b4167df-0bc7-4506-9f1f-768b23db49a9",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://idp.amco.me/phone_number/signin?locale=es",
+					"protocol": "https",
+					"host": [
+						"idp",
+						"amco",
+						"me"
+					],
+					"path": [
+						"phone_number",
+						"signin"
+					],
+					"query": [
+						{
+							"key": "locale",
+							"value": "es"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
